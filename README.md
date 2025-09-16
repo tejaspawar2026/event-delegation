@@ -11,16 +11,6 @@ document.getElementById("grandparent").addEventListener("click", (event) => {
   console.log("Clicked element:", event.target);
 });
 
-
-/* HTML */
-
-<div id="grandparent">
-  <div class="parent">
-    <div class="child">Click Me</div>
-  </div>
-</div>
-
-
 # How It Works
 
 - The click event listener is added only to the #grandparent element.
