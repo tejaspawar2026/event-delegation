@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+    <style>
+        .grandparent {
+            background-color: yellow;
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .parent {
+            background-color: blueviolet;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .child {
+            background-color: aqua;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grandparent" id="grandparent">
+        Grandparent
+        <div class="parent" id="parent">
+            Parent
+            <div class="child" id="child">
+                Child
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
